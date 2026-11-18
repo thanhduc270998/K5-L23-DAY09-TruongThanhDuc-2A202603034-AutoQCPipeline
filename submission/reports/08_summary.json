@@ -2,17 +2,17 @@
   "verdict": {
     "decision": "Hold",
     "n_errors": 0,
-    "n_warn_images": 60,
-    "n_images": 205,
-    "warn_ratio": 0.2927,
+    "n_warn_images": 34,
+    "n_images": 193,
+    "warn_ratio": 0.1762,
     "reasons": [
-      "60/205 ảnh còn cảnh báo chưa duyệt (29.3% >= 10.0%)"
+      "34/193 ảnh còn cảnh báo chưa duyệt (17.6% >= 10.0%)"
     ]
   },
   "reviewed": 80,
   "budget": 80,
-  "seconds": 8.5,
+  "seconds": 11.7,
   "exported": "E:\\vinuni\\K5-L2A-DAY09-TruongThanhDuc-2A202603034-AutoQCPipeline\\submission\\export\\clean_v1",
-  "config_sha1": "b44ba77a8a036c1cad78e0c28ed1db6ba7404125",
+  "config_sha1": "b8c69ed7653ad6ea2bd1ebe1e9cc5279b0a05b11",
   "review_sim_sha1": "7988ca22827f780a7043a2300490e679a1697154"
 }

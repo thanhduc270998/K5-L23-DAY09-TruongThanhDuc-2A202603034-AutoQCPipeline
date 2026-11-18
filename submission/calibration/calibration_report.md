@@ -11,12 +11,12 @@ BOX_OUT_OF_IMAGE             5    5    0    0       1.00    1.00   1.00
 BOX_ZERO                     2    2    0    0       1.00    1.00   1.00
 DUP_BOX                      3    3    0    0       1.00    1.00   1.00
 DUP_IMAGE_EXACT              3    3    0    0       1.00    1.00   1.00
-DUP_IMAGE_NEAR               6    3    0    3       1.00    0.50   0.67
+DUP_IMAGE_NEAR               6    5    0    1       1.00    0.83   0.91
 MISSING_LABEL_FILE           2    2    0    0       1.00    1.00   1.00
 POSSIBLE_FALSE_POS           5    5   11    0       0.31    1.00   0.48
-POSSIBLE_LOOSE_BOX           5    2    5    3       0.29    0.40   0.33
-POSSIBLE_MISSING             8    8    8    0       0.50    1.00   0.67
-POSSIBLE_WRONG_CLASS         6    5    4    1       0.56    0.83   0.67
+POSSIBLE_LOOSE_BOX           5    1    4    4       0.20    0.20   0.20
+POSSIBLE_MISSING             8    8    6    0       0.57    1.00   0.73
+POSSIBLE_WRONG_CLASS         6    5    3    1       0.62    0.83   0.71
 ```
 
 ## Sweep `duplicates.phash_dist`

@@ -1,9 +1,9 @@
 # Danh sách lỗi — SAU sửa tự động (v2)
-ảnh đã quét: 205
+ảnh đã quét: 193
 
 label_format -> 10 dòng
-missing_labels -> 21 dòng
-second_opinion -> 243 dòng
+missing_labels -> 20 dòng
+second_opinion -> 120 dòng
 
 [ERROR] MISSING_LABEL_FILE   img_0031  ảnh không có file nhãn
 [ERROR] MISSING_LABEL_FILE   img_0053  ảnh không có file nhãn
@@ -22,7 +22,6 @@ second_opinion -> 243 dòng
 [WARN ] BOX_TINY             img_0161.txt:3  cạnh ngắn 11.4px < 12px
 [WARN ] BOX_TINY             img_0161.txt:4  cạnh ngắn 11.9px < 12px
 [WARN ] EMPTY_LABEL          img_0004  file nhãn rỗng: ảnh nền hay thiếu nhãn?
-[WARN ] EMPTY_LABEL          img_0013  file nhãn rỗng: ảnh nền hay thiếu nhãn?
 [WARN ] EMPTY_LABEL          img_0050  file nhãn rỗng: ảnh nền hay thiếu nhãn?
 [WARN ] EMPTY_LABEL          img_0057  file nhãn rỗng: ảnh nền hay thiếu nhãn?
 [WARN ] EMPTY_LABEL          img_0065  file nhãn rỗng: ảnh nền hay thiếu nhãn?
@@ -54,41 +53,25 @@ second_opinion -> 243 dòng
 [WARN ] POSSIBLE_FALSE_POS   img_0150.txt:3  box nhãn person không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0155.txt:2  box nhãn person không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0155.txt:3  box nhãn car không khớp dự đoán nào (conf >= 0.1)
-[WARN ] POSSIBLE_FALSE_POS   img_0177.txt:2  box nhãn bus không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0180.txt:5  box nhãn bus không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0189.txt:4  box nhãn car không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0193.txt:6  box nhãn bus không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0204.txt:1  box nhãn person không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_FALSE_POS   img_0206.txt:1  box nhãn person không khớp dự đoán nào (conf >= 0.1)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0015  box person lệch/lỏng (IoU=0.34 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0015  box person lệch/lỏng (IoU=0.35 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0018  box person lệch/lỏng (IoU=0.45 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0023  box person lệch/lỏng (IoU=0.40 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0030  box person lệch/lỏng (IoU=0.34 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0036  box person lệch/lỏng (IoU=0.43 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0038  box person lệch/lỏng (IoU=0.40 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0045  box person lệch/lỏng (IoU=0.33 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0045  box person lệch/lỏng (IoU=0.45 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0046  box person lệch/lỏng (IoU=0.38 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0051  box car lệch/lỏng (IoU=0.30 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0054  box car lệch/lỏng (IoU=0.38 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0058  box person lệch/lỏng (IoU=0.44 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0062  box person lệch/lỏng (IoU=0.47 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0062  box person lệch/lỏng (IoU=0.35 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0063  box person lệch/lỏng (IoU=0.41 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0064  box person lệch/lỏng (IoU=0.45 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0068  box person lệch/lỏng (IoU=0.42 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0069  box person lệch/lỏng (IoU=0.39 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0075  box person lệch/lỏng (IoU=0.32 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0077  box person lệch/lỏng (IoU=0.40 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0081  box person lệch/lỏng (IoU=0.48 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0082  box person lệch/lỏng (IoU=0.48 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0090  box person lệch/lỏng (IoU=0.46 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0091  box person lệch/lỏng (IoU=0.41 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0094  box person lệch/lỏng (IoU=0.39 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0094  box person lệch/lỏng (IoU=0.32 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0096  box person lệch/lỏng (IoU=0.47 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0108  box truck lệch/lỏng (IoU=0.45 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0119  box person lệch/lỏng (IoU=0.41 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0125  box person lệch/lỏng (IoU=0.42 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0127  box person lệch/lỏng (IoU=0.44 < 0.5)
@@ -98,181 +81,74 @@ second_opinion -> 243 dòng
 [WARN ] POSSIBLE_LOOSE_BOX   img_0171  box car lệch/lỏng (IoU=0.43 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0171  box car lệch/lỏng (IoU=0.33 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0175  box person lệch/lỏng (IoU=0.42 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0175  box person lệch/lỏng (IoU=0.43 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0179  box person lệch/lỏng (IoU=0.37 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0188  box person lệch/lỏng (IoU=0.50 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0200  box person lệch/lỏng (IoU=0.43 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0210  box car lệch/lỏng (IoU=0.48 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0217  box car lệch/lỏng (IoU=0.34 < 0.5)
 [WARN ] POSSIBLE_LOOSE_BOX   img_0217  box car lệch/lỏng (IoU=0.36 < 0.5)
-[WARN ] POSSIBLE_LOOSE_BOX   img_0223  box person lệch/lỏng (IoU=0.46 < 0.5)
 [WARN ] POSSIBLE_MISSING     img_0001  model thấy person (conf=0.95) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0001  model thấy person (conf=0.42) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0004  model thấy car (conf=0.89) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0004  model thấy car (conf=0.79) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0005  model thấy person (conf=0.30) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0012  model thấy person (conf=0.67) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0014  model thấy person (conf=0.85) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0019  model thấy person (conf=0.46) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0020  model thấy person (conf=0.84) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0020  model thấy person (conf=0.50) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0020  model thấy person (conf=0.46) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0021  model thấy person (conf=0.34) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0022  model thấy car (conf=0.85) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0024  model thấy person (conf=0.56) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0027  model thấy truck (conf=0.57) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0028  model thấy person (conf=0.94) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0030  model thấy person (conf=0.69) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0030  model thấy person (conf=0.26) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0032  model thấy person (conf=0.61) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0032  model thấy person (conf=0.40) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0032  model thấy car (conf=0.30) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0032  model thấy person (conf=0.25) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0037  model thấy person (conf=0.32) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0045  model thấy person (conf=0.29) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0047  model thấy person (conf=0.72) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0050  model thấy person (conf=0.93) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0051  model thấy car (conf=0.31) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0057  model thấy person (conf=0.89) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0058  model thấy person (conf=0.73) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0058  model thấy person (conf=0.44) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0058  model thấy person (conf=0.41) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0058  model thấy person (conf=0.33) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0058  model thấy person (conf=0.29) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0064  model thấy car (conf=0.36) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0065  model thấy bus (conf=0.94) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0066  model thấy bus (conf=0.95) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0066  model thấy person (conf=0.29) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0067  model thấy person (conf=0.84) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0067  model thấy person (conf=0.58) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0067  model thấy person (conf=0.53) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0067  model thấy person (conf=0.37) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0068  model thấy person (conf=0.89) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0073  model thấy bus (conf=0.41) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0078  model thấy car (conf=0.85) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0084  model thấy person (conf=0.47) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0084  model thấy person (conf=0.42) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0084  model thấy person (conf=0.25) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0086  model thấy person (conf=0.88) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0087  model thấy person (conf=0.28) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0091  model thấy person (conf=0.38) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0092  model thấy car (conf=0.91) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0093  model thấy person (conf=0.71) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0094  model thấy person (conf=0.49) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0095  model thấy person (conf=0.40) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0096  model thấy person (conf=0.86) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0099  model thấy person (conf=0.88) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0099  model thấy person (conf=0.28) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0099  model thấy person (conf=0.26) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0100  model thấy person (conf=0.62) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0100  model thấy person (conf=0.33) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0103  model thấy person (conf=0.92) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0104  model thấy person (conf=0.93) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0106  model thấy car (conf=0.27) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0108  model thấy truck (conf=0.42) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0114  model thấy person (conf=0.45) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0114  model thấy person (conf=0.31) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0116  model thấy person (conf=0.79) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0116  model thấy person (conf=0.31) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0117  model thấy person (conf=0.67) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0119  model thấy person (conf=0.52) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0119  model thấy person (conf=0.32) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0119  model thấy person (conf=0.30) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0121  model thấy person (conf=0.76) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0124  model thấy car (conf=0.28) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0124  model thấy car (conf=0.26) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0125  model thấy person (conf=0.38) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0125  model thấy person (conf=0.35) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0127  model thấy person (conf=0.68) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0127  model thấy person (conf=0.48) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0127  model thấy person (conf=0.46) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0127  model thấy person (conf=0.46) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0127  model thấy person (conf=0.33) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0127  model thấy person (conf=0.28) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0131  model thấy person (conf=0.89) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0131  model thấy person (conf=0.45) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0133  model thấy car (conf=0.56) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0133  model thấy car (conf=0.40) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0134  model thấy person (conf=0.68) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0134  model thấy person (conf=0.55) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0137  model thấy person (conf=0.32) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0138  model thấy person (conf=0.32) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0142  model thấy car (conf=0.30) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0144  model thấy person (conf=0.96) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0145  model thấy person (conf=0.94) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0147  model thấy person (conf=0.78) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0151  model thấy bus (conf=0.73) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0151  model thấy person (conf=0.44) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0151  model thấy person (conf=0.35) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0151  model thấy bus (conf=0.26) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0157  model thấy person (conf=0.90) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0159  model thấy person (conf=0.93) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.78) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.47) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.43) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.38) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.33) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.33) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.33) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.31) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy bus (conf=0.30) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy bus (conf=0.27) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0160  model thấy truck (conf=0.25) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0163  model thấy truck (conf=0.32) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0164  model thấy person (conf=0.78) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0165  model thấy person (conf=0.82) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0165  model thấy person (conf=0.26) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0178  model thấy person (conf=0.93) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0182  model thấy person (conf=0.26) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0184  model thấy person (conf=0.79) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0185  model thấy person (conf=0.51) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0187  model thấy person (conf=0.93) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0187  model thấy person (conf=0.29) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0188  model thấy person (conf=0.58) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0191  model thấy truck (conf=0.32) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0194  model thấy car (conf=0.60) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0195  model thấy truck (conf=0.50) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0195  model thấy car (conf=0.45) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0195  model thấy truck (conf=0.38) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0195  model thấy car (conf=0.38) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0195  model thấy car (conf=0.37) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0199  model thấy person (conf=0.83) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0199  model thấy person (conf=0.57) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0200  model thấy person (conf=0.32) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0204  model thấy person (conf=0.91) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0205  model thấy bus (conf=0.39) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0210  model thấy car (conf=0.67) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0210  model thấy car (conf=0.52) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0210  model thấy car (conf=0.27) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0211  model thấy car (conf=0.75) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0211  model thấy car (conf=0.36) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0215  model thấy person (conf=0.94) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0215  model thấy person (conf=0.57) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0218  model thấy person (conf=0.84) nhưng nhãn không có box
 [WARN ] POSSIBLE_MISSING     img_0220  model thấy person (conf=0.82) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0220  model thấy car (conf=0.39) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0220  model thấy car (conf=0.38) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0220  model thấy car (conf=0.27) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0220  model thấy car (conf=0.26) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0224  model thấy person (conf=0.42) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0224  model thấy person (conf=0.27) nhưng nhãn không có box
-[WARN ] POSSIBLE_MISSING     img_0224  model thấy person (conf=0.27) nhưng nhãn không có box
 [WARN ] POSSIBLE_WRONG_CLASS img_0019  nhãn ghi truck, model dự đoán car (conf=0.94, IoU=0.99)
 [WARN ] POSSIBLE_WRONG_CLASS img_0020  nhãn ghi truck, model dự đoán bus (conf=0.95, IoU=0.94)
-[WARN ] POSSIBLE_WRONG_CLASS img_0021  nhãn ghi car, model dự đoán person (conf=0.93, IoU=0.97)
 [WARN ] POSSIBLE_WRONG_CLASS img_0034  nhãn ghi car, model dự đoán person (conf=0.91, IoU=0.89)
 [WARN ] POSSIBLE_WRONG_CLASS img_0037  nhãn ghi truck, model dự đoán car (conf=0.91, IoU=0.97)
 [WARN ] POSSIBLE_WRONG_CLASS img_0070  nhãn ghi car, model dự đoán person (conf=0.95, IoU=0.99)
 [WARN ] POSSIBLE_WRONG_CLASS img_0071  nhãn ghi car, model dự đoán person (conf=0.93, IoU=0.99)
 [WARN ] POSSIBLE_WRONG_CLASS img_0075  nhãn ghi car, model dự đoán person (conf=0.91, IoU=0.97)
 [WARN ] POSSIBLE_WRONG_CLASS img_0083  nhãn ghi bus, model dự đoán car (conf=0.69, IoU=0.95)
-[WARN ] POSSIBLE_WRONG_CLASS img_0092  nhãn ghi car, model dự đoán truck (conf=0.47, IoU=0.94)
-[WARN ] POSSIBLE_WRONG_CLASS img_0101  nhãn ghi truck, model dự đoán car (conf=0.56, IoU=0.58)
 [WARN ] POSSIBLE_WRONG_CLASS img_0112  nhãn ghi car, model dự đoán person (conf=0.79, IoU=0.93)
 [WARN ] POSSIBLE_WRONG_CLASS img_0124  nhãn ghi truck, model dự đoán car (conf=0.93, IoU=0.97)
-[WARN ] POSSIBLE_WRONG_CLASS img_0124  nhãn ghi car, model dự đoán truck (conf=0.48, IoU=0.98)
 [WARN ] POSSIBLE_WRONG_CLASS img_0160  nhãn ghi bus, model dự đoán truck (conf=0.78, IoU=0.95)
-[WARN ] POSSIBLE_WRONG_CLASS img_0180  nhãn ghi car, model dự đoán bus (conf=0.31, IoU=0.71)
 [WARN ] POSSIBLE_WRONG_CLASS img_0183  nhãn ghi car, model dự đoán person (conf=0.91, IoU=0.94)
 [WARN ] POSSIBLE_WRONG_CLASS img_0185  nhãn ghi car, model dự đoán person (conf=0.68, IoU=0.90)
 [WARN ] POSSIBLE_WRONG_CLASS img_0191  nhãn ghi car, model dự đoán person (conf=0.91, IoU=0.95)
@@ -284,8 +160,8 @@ second_opinion -> 243 dòng
 error MISSING_LABEL_FILE     6
 warn  BOX_HUGE               3
 warn  BOX_TINY               7
-warn  EMPTY_LABEL            15
-warn  POSSIBLE_FALSE_POS     24
-warn  POSSIBLE_LOOSE_BOX     46
-warn  POSSIBLE_MISSING       151
-warn  POSSIBLE_WRONG_CLASS   22
+warn  EMPTY_LABEL            14
+warn  POSSIBLE_FALSE_POS     23
+warn  POSSIBLE_LOOSE_BOX     27
+warn  POSSIBLE_MISSING       53
+warn  POSSIBLE_WRONG_CLASS   17
