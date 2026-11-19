@@ -48,7 +48,23 @@ Một số lỗi pipeline vẫn bỏ lọt:
 - Ảnh gần trùng biến đổi mạnh: ở `phash_dist = 16`, trên `calib` vẫn sót 1/6 ca `DUP_IMAGE_NEAR` (Recall `0.83`) khi ảnh bị cắt hoặc biến đổi nhiều hơn ngưỡng 16.
 
 ## 5. Train: raw vs clean (tùy chọn, chấm riêng)
-Chưa chạy (chưa có điều kiện train GPU trên Google Colab).
+Train trên Colab GPU với cùng cấu hình: `yolo26n.pt`, 20 epoch, batch 16, `imgsz = 640`, 2 seed (`0, 1`), chung `val` (`gold_val`, 40 ảnh) và `test` (100 ảnh). Bảng kết quả từ `submission/results/comparison.md`:
+
+| biến thể | #ảnh train | số seed | map50 (TB ± độ lệch) | map50_95 (TB ± độ lệch) | precision (TB ± độ lệch) | recall (TB ± độ lệch) |
+|---|---|---|---|---|---|---|
+| raw | 224 | 2 | 0.726 ± 0.000 | 0.512 ± 0.004 | 0.764 ± 0.061 | 0.649 ± 0.028 |
+| clean | 193 | 2 | 0.730 ± 0.001 | 0.501 ± 0.001 | 0.800 ± 0.019 | 0.624 ± 0.012 |
+
+Chênh mAP50 (clean − raw) = **+0.004**.
+
+Kết luận: **chưa kết luận được `clean` tốt hơn `raw`**. Tuy `mAP50` nhỉnh hơn `+0.004` (nhỉnh hơn độ lệch 2 seed là `0.001`) và `precision` cao hơn một chút (nhưng vẫn nằm trong độ lệch `±0.061` của `raw`), thì `mAP50-95` lại giảm `-0.011` và `recall` giảm `-0.025`. Mới chạy 2 seed mà các lớp đã dao động khá mạnh (vd. `truck` ở `clean` nhảy từ `0.592` lên `0.656`) nên mức chênh này chưa nói lên được gì rõ ràng.
+
+Một số lý do có thể và cách kiểm tra:
+- `raw` còn chứa ảnh rò rỉ từ tập test (`LEAK_TEST` như `img_0049`, `img_0167`...) nên điểm bị kéo cao giả, còn `clean` bị mất 31 ảnh train (có vài ảnh khác nhau bị loại nhầm ở `phash_dist = 16`). Cách kiểm: bỏ riêng ảnh `LEAK_TEST` khỏi `raw` rồi đo lại, hoặc hạ `phash_dist` xuống `10–12` để giữ thêm ảnh train.
+- `clean` vẫn đang là bản `Hold` (mới có 80/193 ảnh được người duyệt, 113 ảnh còn lại vẫn là nhãn máy với 34 ảnh còn cảnh báo) nên box còn lỏng nhẹ làm `mAP50-95` giảm. Cách kiểm: train thêm bản `oracle` (toàn bộ dùng nhãn người) để biết mức chặn trên.
+- Tập test khá nhỏ (100 ảnh) và chỉ chạy 2 seed nên kết quả dễ nhiễu. Cách kiểm: tăng lên 3–5 seed và chạy dài hơn (30–40 epoch).
+
+Việc tiếp theo: hạ `phash_dist` về `10–12` cho đỡ mất ảnh oan, duyệt thêm phần ảnh cảnh báo để thành `Release`, rồi chạy lại so sánh với 3–5 seed.
 
 ## 6. Quyết định và ghi chú AI
 Pipeline kết luận **Hold** vì dù hết lỗi bắt buộc (0 lỗi) nhưng sau khi dùng hết ngân sách 80 ảnh duyệt thì vẫn còn 34/193 ảnh có cảnh báo chưa được xem (17.6% >= 10.0%). Để chuyển sang **Release**, cần duyệt thêm ít nhất 15 ảnh cảnh báo nữa (tăng ngân sách lên khoảng 95 ảnh để kéo tỉ lệ xuống tối đa 19/193 ảnh, tức `< 10%`), không nên kéo ngưỡng `conf` lên quá cao chỉ để làm rỗng hàng đợi giả.
